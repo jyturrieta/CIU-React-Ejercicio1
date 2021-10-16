@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { Fragment } from "react";
 
-const Producto = ({producto}) => {
-    return ( 
-        <h3>{producto.id} {producto.articulo} {producto.precio}</h3>
-     );
-}
- 
+const Producto = ({ producto }) => {
+  const { id, articulo, precio } = producto;
+
+  return (
+    <Fragment>
+      <div>
+        <h3>
+          {id} - {articulo} -{precio}
+        </h3>
+      </div>
+    </Fragment>
+  );
+};
+
 export default Producto;

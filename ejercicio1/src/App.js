@@ -20,7 +20,9 @@ function App() {
       <Header />
       <h1>Torre de Pizza - Pedí ahora!</h1>
       {productos.map((producto) => (
-        <Producto producto={producto} />
+        <Producto 
+          key = {producto.id}
+          producto={producto} />
       ))}
       <Footer />
     </Fragment>
